@@ -1,0 +1,77 @@
+/*
+Theme Name: Hello Elementor Child
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Template: hello-elementor
+Author: Elementor Team
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Description: A lightweight and minimalist WordPress theme for Elementor page builder.
+Tags: accessibility-ready,flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
+Version: 2.8.1.1694746510
+Updated: 2023-09-15 02:55:10
+
+*/
+
+@font-face {
+  font-family: Roobert-Regular;
+  src: url(./assets/fonts/Roobert-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: Roobert-Medium;
+  src: url(./assets/fonts/Roobert-Medium.otf) format("truetype");
+}
+
+@font-face {
+  font-family: Roobert-SemiBold;
+  src: url(./assets/fonts/Roobert-SemiBold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: Roobert-Bold;
+  src: url(./assets/fonts/Roobert-Bold.otf) format("truetype");
+}
+
+body {
+  font-size: 17px;
+  font-family: Roobert-Regular;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Roobert-Regular !important;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: Roobert-Regular !important;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-family: Roobert-Regular !important;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: Roobert-Regular !important;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-family: Roobert-Regular !important;
+}
+
+h6 {
+  font-size: 1rem;
+  font-family: Roobert-Regular !important;
+}
+
+a {
+  font-size: 1rem;
+  font-family: Roobert-Regular !important;
+}
+
+p {
+  font-size: 1em;
+  font-family: Roobert-Regular !important;
+}
