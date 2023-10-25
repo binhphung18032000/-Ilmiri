@@ -11,6 +11,8 @@ Updated: 2023-09-15 02:55:10
 
 */
 
+@import url('./assets/css/home-page.css');
+
 @font-face {
   font-family: Roobert-Regular;
   src: url(./assets/fonts/Roobert-Regular.otf) format("truetype");
