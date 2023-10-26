@@ -37,9 +37,7 @@
 }
 
 .m-nav__list li.menu-item {
-  /* overflow: hidden;
-  height: 25px; */
-  padding-left: 15px;
+  margin-left: 15px;
 }
 
 .m-nav__list .menu-item a span {
@@ -57,7 +55,6 @@
 
 #check__toggle:checked~.m-nav {
   display: flex;
-  flex-direction: column;
 }
 
 .btn__toggle,
@@ -68,27 +65,6 @@
 #m-nav__list__all {
   display: none;
 }
-
-/* #main-menu {
-  display: flex;
-  padding-left: 0;
-  list-style: none;
-}
-
-#main-menu li {
-  padding-left: 15px;
-}
-
-#main-menu li a {
-  color: #6e6764;
-  font-size: 1.125rem;
-  font-weight: 650;
-  transition: all 0.3s;
-}
-
-#main-menu li:hover a {
-  color: #C6994F;
-} */
 
 .gap-menu {
   width: 100%;
@@ -111,6 +87,7 @@
 
 #wp-footer {
   background: #6E6764;
+  padding: 0;
 }
 
 #wp-footer > .e-con-inner {
@@ -137,6 +114,7 @@
 
 #wp-footer .e-con-inner .elementor-element.footer-image {
   width: 30%;
+  align-self: center;
 }
 
 .heading-2 h2 {
@@ -164,15 +142,31 @@
   font-size: 2.5rem;
   width: unset;
   height: unset;
+  transition: all 0.3s;
+}
+
+.society .elementor-widget-container .elementor-social-icons-wrapper .elementor-grid-item .elementor-icon.elementor-social-icon:hover {
+  opacity: 0.7;
 }
 
 .copyright .elementor-widget-container .elementor-heading-title {
   color: #F2ECDF !important;
   font-size: 1rem;
   font-weight: 400;
-  max-width: 236px;
+  max-width: 240px;
   display: inline-block;
   line-height: 1.125rem;
+}
+
+.copyright .elementor-widget-container .elementor-heading-title a:hover {
+  text-decoration: underline;
+  color: #e9d5ac;
+}
+
+@media (max-width: 1138px) {
+  .heading-2 h2 {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -196,12 +190,7 @@
 
   #m-nav__list__all {
       display: block;
-      width: 95%;
-      margin-left: -10px;
-  }
-
-  #m-nav__list__all li.menu-item:last-child {
-      margin-top: 12px;
+      text-align: center;
   }
 
   .m-nav__list {
@@ -210,7 +199,7 @@
 
   .btn__toggle {
       padding: 10px;
-      color: #000000 !important;
+      color: #252422;
   }
 
   .btn__toggle i,
@@ -235,8 +224,8 @@
 
   #m-logo-mobile-active {
       position: absolute;
-      top: 13px;
-      left: 32px
+      top: 10px;
+      left: 30px
   }
 
   .m-nav__list-item {
@@ -249,20 +238,14 @@
   .m-nav {
       position: fixed;
       top: 0;
-      background: #FF0000;
+      background: #f2ecdf;
       width: 100%;
-      height: 100vh;
+      height: 100%;
       left: 0;
-      align-items: flex-start;
-      justify-content: flex-start;
+      align-items: center;
+      justify-content: center;
       display: none;
       z-index: 99999999;
-  }
-
-  .m-full-menu-active {
-      width: 100%;
-      margin-top: 110px;
-      margin-left: 45px;
   }
 
   .m-nav__list {
@@ -270,8 +253,8 @@
   }
 
   .m-nav__list li.menu-item {
-      height: 34.5px;
-      margin-bottom: 4px;
+      margin-left: 0;
+      margin-top: 10px;
   }
 
   .m-nav__list .menu-item a span::before {
@@ -279,27 +262,140 @@
       top: 102%;
   }
 
-  .m-nav__list .menu-item a span {
-      padding: 6px 8px 0px 8px;
-  }
-
-
   .btn__toggle,
   .btn__toggle_close {
       display: block;
   }
 
   .btn__toggle_close {
-      color: #000000;
+      color: #252422;
       position: absolute;
-      top: 23px;
-      right: 45px;
+      top: 25px;
+      right: 43px;
+  }
+
+  #m-nav__list__all li {
+    animation: animation-fadeIn 0.3s linear;
+    animation-fill-mode: both;
+  }
+
+  #m-nav__list__all li:nth-child(1) {
+      animation-delay: 0.2s;
+  }
+
+  #m-nav__list__all li:nth-child(2) {
+      animation-delay: 0.3s;
+  }
+
+  #m-nav__list__all li:nth-child(3) {
+      animation-delay: 0.4s;
+  }
+
+  #m-nav__list__all li:nth-child(4) {
+      animation-delay: 0.5s;
+  }
+
+  #m-nav__list__all li:nth-child(5) {
+      animation-delay: 0.6s;
+  }
+
+  @keyframes animation-fadeIn {
+      0% {
+          opacity: 0;
+          top: 100px;
+      }
+
+      75% {
+          opacity: 0.5;
+          top: 0px;
+      }
+
+      100% {
+          opacity: 1;
+      }
+  }
+
+  #wp-footer > .e-con-inner {
+    padding: 20px 0 20px 40px;
+  }
+
+  .heading-2 h2 {
+    font-size: 2rem;
+  }
+
+  .elementor-element.footer-content .wp-footer-title .e-con-inner {
+    padding-bottom: 30px;
+  }
+
+  .elementor-element.footer-content .wp-footer-society .e-con-inner {
+    padding-bottom: 10px;
   }
 }
 
 @media (max-width: 767px) {
+  .m-header-main .container {
+    padding: 14px 10px;
+  }
+
   #m-logo-mobile-active {
-      top: 18px;
-      left: 16px;
+    top: 14px;
+    left: 10px;
+  }
+
+  .btn__toggle_close {
+    top: 29px;
+    right: 23px;
+  }
+
+  #wp-footer > .e-con-inner {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  #wp-footer .e-con-inner .elementor-element.footer-content {
+    order: 2;
+    width: 100%;
+  }
+
+  #wp-footer .e-con-inner .elementor-element.footer-image {
+    order: 1;
+    width: 50%;
+  }
+
+  .elementor-element.footer-content .wp-footer-title .e-con-inner,
+  .elementor-element.footer-content .wp-footer-society .e-con-inner,
+  .elementor-element.footer-content .wp-footer-copyright .e-con-inner {
+    align-items: center;
+  }
+
+  .elementor-element.footer-content .wp-footer-title .e-con-inner,
+  .elementor-element.footer-content .wp-footer-society .e-con-inner {
+    padding: 10px 0 20px;
+  }
+
+  .elementor-element.footer-content .wp-footer-copyright .e-con-inner {
+    padding: 10px 0 0;
+  }
+
+  .heading-2 h2 {
+    font-size: 1.5rem;
+  }
+
+  .copyright .elementor-widget-container .elementor-heading-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .heading-2 h2 {
+    font-size: 1.2rem;
+  }
+
+  .society .elementor-widget-container .elementor-social-icons-wrapper .elementor-grid-item {
+    margin-right: 10px;
+  }
+
+  .copyright .elementor-widget-container .elementor-heading-title {
+    font-size: 0.9rem;
   }
 }

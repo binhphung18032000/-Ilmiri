@@ -85,33 +85,31 @@ if (!defined('ABSPATH')) {
                     }
                     ?>
                 </ul>
-                <div class="m-full-menu-active" style="margin-right: 13px;">
-                    <ul class="m-nav__list" id="m-nav__list__all">
-						<?php
-							$menu_items = wp_get_nav_menu_items('main_menu');
-							if ($menu_items) {
-								foreach ($menu_items as $menu_item) {
-									$has_children = in_array('menu-item-has-children', $menu_item->classes);
+                <ul class="m-nav__list" id="m-nav__list__all">
+                    <?php
+                        $menu_items = wp_get_nav_menu_items('main_menu');
+                        if ($menu_items) {
+                            foreach ($menu_items as $menu_item) {
+                                $has_children = in_array('menu-item-has-children', $menu_item->classes);
 
-									echo '<li' . ($has_children ? ' class="menu-item-has-children menu-item"' : ' class="menu-item"') . '>';
-									echo '<a href="' . esc_url($menu_item->url) . '"><span>' . esc_html($menu_item->title) . '</span></a>';
+                                echo '<li' . ($has_children ? ' class="menu-item-has-children menu-item"' : ' class="menu-item"') . '>';
+                                echo '<a href="' . esc_url($menu_item->url) . '"><span>' . esc_html($menu_item->title) . '</span></a>';
 
-									if ($has_children) {
-										echo '<ul class="sub-menu">';
-										foreach ($menu_items as $child_menu_item) {
-											if ($child_menu_item->menu_item_parent == $menu_item->ID) {
-												echo '<li class="menu-item"><a href="' . esc_url($child_menu_item->url) . '"><span>' . esc_html($child_menu_item->title) . '</span></a></li>';
-											}
-										}
-										echo '</ul>';
-									}
+                                if ($has_children) {
+                                    echo '<ul class="sub-menu">';
+                                    foreach ($menu_items as $child_menu_item) {
+                                        if ($child_menu_item->menu_item_parent == $menu_item->ID) {
+                                            echo '<li class="menu-item"><a href="' . esc_url($child_menu_item->url) . '"><span>' . esc_html($child_menu_item->title) . '</span></a></li>';
+                                        }
+                                    }
+                                    echo '</ul>';
+                                }
 
-									echo '</li>';
-								}
-							}
-						?>
-                    </ul>
-				</div>
+                                echo '</li>';
+                            }
+                        }
+                    ?>
+                </ul>
             </nav>
         </div>
     </header>
