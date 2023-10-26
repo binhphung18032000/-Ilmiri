@@ -3,7 +3,6 @@
   position: fixed;
   align-items: center;
   justify-content: center;
-  padding: 8px 0 0 0;
   width: 100%;
   transition: all 0.5s;
   z-index: 999;
@@ -13,7 +12,7 @@
 .m-header-main .container {
   width: 1440px;
   max-width: 100%;
-  padding: 23px 150px;
+  padding: 20px 150px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -37,7 +36,7 @@
 }
 
 .m-nav__list li.menu-item {
-  margin-left: 15px;
+  padding-left: 15px;
 }
 
 .m-nav__list .menu-item a span {
@@ -68,7 +67,7 @@
 
 .gap-menu {
   width: 100%;
-  height: 117px;
+  height: 111px;
 }
 
 .m-logo img {
@@ -84,6 +83,224 @@
   height: 60px;
   width: 268px;
 }
+
+/* Our Passion */
+.our-passion-heading {
+  background-color: #f2ecdf;
+}
+
+.our-passion-heading .e-con-inner {
+  padding: 50px 0 60px;
+}
+
+.our-passion-heading .heading-2 h2 {
+  color: #252422;
+  text-align: center;
+  font-weight: 400;
+}
+
+.our-passion-content {
+  background-color: #f2ecdf;
+  padding: 0;
+}
+
+.our-passion-content .e-con-inner {
+  padding: 0 150px 70px;
+  justify-content: space-between !important;
+}
+
+.our-passion-content .our-passion-post {
+  background-color: #3498db;
+  width: 262px;
+  height: 262px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-passion-content .our-passion-post:nth-child(1) {
+  background-color: #C6994F;  
+}
+
+.our-passion-content .our-passion-post:nth-child(2) {
+  background-color: #5D4C3D;  
+}
+
+.our-passion-content .our-passion-post:nth-child(3) {
+  background-color: #C9C2B9;  
+}
+
+.our-passion-content .our-passion-post:nth-child(4) {
+  background-color: #B0AAA3;  
+}
+
+.heading-3 h3 {
+  font-size: 3.125rem;
+}
+
+.elementor-element.our-passion-post {
+  --widgets-spacing: 10px 20px;
+}
+
+.our-passion-post .heading-3 h3 {
+  font-weight: 650;
+}
+
+.our-passion-post .heading-3 h3,
+.our-passion-post .passion-desc p {
+  color: #F2ECDF;
+}
+
+.our-passion-post.passion-post-3 .heading-3 h3,
+.our-passion-post.passion-post-3 .passion-desc p {
+  color: #252422;
+}
+
+.our-passion-post .passion-desc {
+  max-width: 226px !important;
+}
+
+.passion-desc {
+  text-align: center;
+}
+
+.passion-desc p {
+  font-size: 1.6875rem;
+}
+
+.our-passion-post .passion-desc p {
+  font-weight: 400;
+}
+
+/* End Our Passion */
+
+/* Promotions And Update */
+.promotions-heading,
+.promotions-content {
+  background-color: #C6994F;
+}
+
+.promotions-heading .e-con-inner {
+  padding: 50px 0 40px;
+}
+
+.promotions-heading .heading-2 h2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 400;
+}
+
+.promotions-content .e-con-inner {
+  padding: 0 150px 70px;
+  justify-content: space-between !important;
+}
+
+.heading-4, 
+.promotions-desc,
+.promotions-sub-desc {
+  text-align: center;
+}
+
+.heading-4 h4 {
+  font-size: 1.9375rem;
+}
+
+.promotions-desc p {
+  font-size: 1.4375rem;
+}
+
+.promotions-sub-desc span {
+  font-size: 0.6875rem;
+}
+
+.promotions-content .heading-4 h4 {
+  font-size: 1.75rem;
+}
+
+.promotions-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.promotions-button .elementor-button {
+  display: inline-flex;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px 30px 0px 0px;
+  background: #F2ECDF;
+  width: 242px;
+}
+
+.promotions-button .elementor-button .elementor-button-content-wrapper .elementor-button-text {
+  color: #C6994F;
+  text-align: center;
+  font-size: 1.3125rem;
+  font-weight: 650;
+}
+
+.promotions-post {
+  max-width: 360px;
+  max-height: 525px;
+  flex-shrink: 0;
+  border-radius: 30px 30px 0px 0px;
+  padding: 50px 20px 0;
+  justify-content: space-between;
+}
+
+.promotions-post.elementor-element {
+  --widgets-spacing: 0 20px;
+}
+
+.promotions-post:nth-child(1) {
+  background-color: #F2ECDF;
+}
+
+.promotions-post:nth-child(2) {
+  background-color: #C9C2B9;
+}
+
+.promotions-post:nth-child(3) {
+  background-color: #6E6764;
+}
+
+.promotions-post:nth-child(3) .heading-4 {
+  padding: 0 65px;
+}
+
+.promotions-post:nth-child(2) .heading-4 {
+  min-height: 53px;
+}
+
+.promotions-post:nth-child(1) .promotions-desc {
+  margin-bottom: 8px !important;
+}
+
+.promotions-post:nth-child(3) .promotions-desc {
+  margin-bottom: 18px !important;
+}
+
+.promotions-post .heading-4 h4,
+.promotions-post .promotions-desc p,
+.promotions-post .promotions-sub-desc span {
+  color: #000000;
+  font-weight: 400;
+}
+
+.promotions-post.promotions-post-3 .heading-4 h4,
+.promotions-post.promotions-post-3 .promotions-desc p {
+  color: #F2ECDF;
+}
+
+.promotions-post .promotions-thumb .elementor-widget-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* End Promotions And Update */
 
 #wp-footer {
   background: #6E6764;
@@ -117,9 +334,12 @@
   align-self: center;
 }
 
+.wp-footer-title .heading-2 h2 {
+  font-weight: 500 !important;
+}
+
 .heading-2 h2 {
   font-size: 2.8125rem;
-  font-weight: 500;
 }
 
 .light-brown h2 {
@@ -165,7 +385,7 @@
 
 @media (max-width: 1138px) {
   .heading-2 h2 {
-    font-size: 2.2rem;
+      font-size: 2.2rem;
   }
 }
 
@@ -181,7 +401,7 @@
 
   .gap-menu {
       width: 100%;
-      height: 75px;
+      height: 77px;
   }
 
   #m-nav__list__desktop {
@@ -262,6 +482,7 @@
       top: 102%;
   }
 
+
   .btn__toggle,
   .btn__toggle_close {
       display: block;
@@ -275,8 +496,8 @@
   }
 
   #m-nav__list__all li {
-    animation: animation-fadeIn 0.3s linear;
-    animation-fill-mode: both;
+      animation: animation-fadeIn 0.3s linear;
+      animation-fill-mode: both;
   }
 
   #m-nav__list__all li:nth-child(1) {
@@ -316,86 +537,91 @@
   }
 
   #wp-footer > .e-con-inner {
-    padding: 20px 0 20px 40px;
+      padding: 20px 0 20px 40px;
   }
 
   .heading-2 h2 {
-    font-size: 2rem;
+      font-size: 2rem;
   }
 
   .elementor-element.footer-content .wp-footer-title .e-con-inner {
-    padding-bottom: 30px;
+      padding-bottom: 30px;
   }
 
   .elementor-element.footer-content .wp-footer-society .e-con-inner {
-    padding-bottom: 10px;
+      padding-bottom: 10px;
   }
 }
 
 @media (max-width: 767px) {
+  .gap-menu {
+      width: 100%;
+      height: 85px;
+  }
+
   .m-header-main .container {
-    padding: 14px 10px;
+      padding: 14px 10px;
   }
 
   #m-logo-mobile-active {
-    top: 14px;
-    left: 10px;
+      top: 14px;
+      left: 10px;
   }
 
   .btn__toggle_close {
-    top: 29px;
-    right: 23px;
+      top: 29px;
+      right: 23px;
   }
 
   #wp-footer > .e-con-inner {
-    justify-content: center;
-    padding: 20px;
+      justify-content: center;
+      padding: 20px;
   }
 
   #wp-footer .e-con-inner .elementor-element.footer-content {
-    order: 2;
-    width: 100%;
+      order: 2;
+      width: 100%;
   }
 
   #wp-footer .e-con-inner .elementor-element.footer-image {
-    order: 1;
-    width: 50%;
+      order: 1;
+      width: 50%;
   }
 
   .elementor-element.footer-content .wp-footer-title .e-con-inner,
   .elementor-element.footer-content .wp-footer-society .e-con-inner,
   .elementor-element.footer-content .wp-footer-copyright .e-con-inner {
-    align-items: center;
+      align-items: center;
   }
 
   .elementor-element.footer-content .wp-footer-title .e-con-inner,
   .elementor-element.footer-content .wp-footer-society .e-con-inner {
-    padding: 10px 0 20px;
+      padding: 10px 0 20px;
   }
 
   .elementor-element.footer-content .wp-footer-copyright .e-con-inner {
-    padding: 10px 0 0;
+      padding: 10px 0 0;
   }
 
   .heading-2 h2 {
-    font-size: 1.5rem;
+      font-size: 1.5rem;
   }
 
   .copyright .elementor-widget-container .elementor-heading-title {
-    text-align: center;
+      text-align: center;
   }
 }
 
 @media (max-width: 450px) {
   .heading-2 h2 {
-    font-size: 1.2rem;
+      font-size: 1.2rem;
   }
 
   .society .elementor-widget-container .elementor-social-icons-wrapper .elementor-grid-item {
-    margin-right: 10px;
+      margin-right: 10px;
   }
 
   .copyright .elementor-widget-container .elementor-heading-title {
-    font-size: 0.9rem;
+      font-size: 0.9rem;
   }
 }
