@@ -193,6 +193,7 @@
 .promotions-content .e-con-inner {
   padding: 0 150px 70px;
   justify-content: space-between !important;
+  gap: 10px;
 }
 
 .heading-4, 
@@ -233,6 +234,7 @@
   border-radius: 30px 30px 0px 0px;
   background: #F2ECDF;
   width: 242px;
+  text-decoration: none;
 }
 
 .promotions-button .elementor-button .elementor-button-content-wrapper .elementor-button-text {
@@ -301,6 +303,61 @@
 }
 
 /* End Promotions And Update */
+
+/* Banner Menu */
+.wp-banner-menu,
+.wp-banner-title {
+  background-color: #5D4C3D;
+  padding: 0;
+}
+
+.wp-banner-menu .e-con-inner {
+  padding: 70px 150px 0;
+}
+
+.wp-banner-menu .banner-menu {
+  padding: 0;
+}
+
+.wp-banner-title .heading-2 h2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 500;
+}
+
+.banner-button .elementor-button {
+  display: inline-flex;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 30px 0px 0px;
+  background: #C6994F;
+  text-decoration: none;
+}
+
+.wp-banner-button .banner-button {
+  text-align: center;
+}
+
+.wp-banner-button:nth-child(even) .banner-button .elementor-button {
+  margin-left: 145px;
+}
+
+.wp-banner-button:nth-child(odd) .banner-button .elementor-button {
+  margin-right: 210px;
+}
+
+.banner-button .elementor-button .elementor-button-content-wrapper .elementor-button-text {
+  color: #F2ECDF;
+  text-align: center;
+  font-size: 1.3125rem;
+  font-weight: 650;
+}
+
+.wp-banner-title .e-con-inner {
+  padding: 30px 0 50px;
+}
+/* End Banner Menu */
 
 #wp-footer {
   background: #6E6764;
@@ -383,9 +440,97 @@
   color: #e9d5ac;
 }
 
+@media (max-width: 1365px) {
+  .heading-3 h3 {
+    font-size: 2.5rem;
+  }
+
+  .passion-desc p {
+    font-size: 1.375rem;
+  }
+
+  .our-passion-content .our-passion-post {
+    width: 242px;
+    height: 242px;
+  }
+
+  .promotions-post:nth-child(3) .heading-4 {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .our-passion-content .our-passion-post {
+    width: 222px;
+    height: 222px;
+  }
+
+  .heading-2 h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .our-passion-content .our-passion-post {
+    width: 200px;
+    height: 200px;
+  }
+
+  .heading-3 h3 {
+    font-size: 2.25rem;
+  }
+
+  .passion-desc p {
+    font-size: 1.25rem;
+  }
+
+  .promotions-content .heading-4 h4 {
+    font-size: 1.5rem;
+  }
+
+  .promotions-desc p {
+    font-size: 1.25rem;
+  }
+
+  .promotions-button .elementor-button .elementor-button-content-wrapper .elementor-button-text {
+    font-size: 1rem;
+  }
+
+  .promotions-post:nth-child(3) .heading-4 {
+    padding: 0 30px;
+  }
+
+  .promotions-button .elementor-button {
+    padding: 10px 20px;
+    width: 200px;
+  }
+}
+
 @media (max-width: 1138px) {
   .heading-2 h2 {
       font-size: 2.2rem;
+  }
+
+  .our-passion-content .e-con-inner {
+    gap: 10px;
+  }
+
+  .wp-banner-button:nth-child(odd) .banner-button {
+    text-align: left;
+  }
+
+  .wp-banner-button:nth-child(even) .banner-button {
+    text-align: right;
+  }
+
+  .wp-banner-button:nth-child(odd) .banner-button .elementor-button {
+    margin-right: 0;
+    min-width: 250px;
+  }
+
+  .wp-banner-button:nth-child(even) .banner-button .elementor-button {
+    margin-left: 0;
+    min-width: 250px;
   }
 }
 
@@ -551,6 +696,29 @@
   .elementor-element.footer-content .wp-footer-society .e-con-inner {
       padding-bottom: 10px;
   }
+
+  .our-passion-content .e-con-inner {
+    padding: 0 40px 70px;
+  }
+
+  .heading-2 h2 {
+    font-size: 2.25rem;
+  }
+
+  .our-passion-heading .e-con-inner {
+    padding: 50px 30px 60px;
+  }
+
+  .promotions-content .e-con-inner {
+    padding: 0 40px 70px;
+  }
+}
+
+@media (max-width: 850px) {
+  .promotions-button .elementor-button {
+    padding: 10px 15px;
+    width: 175px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -604,11 +772,24 @@
   }
 
   .heading-2 h2 {
-      font-size: 1.5rem;
+      font-size: 1.5625rem;
   }
 
   .copyright .elementor-widget-container .elementor-heading-title {
       text-align: center;
+  }
+
+  .our-passion-content .e-con-inner {
+    padding: 0 20px 70px;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px;
+  }
+
+  .promotions-content .e-con-inner {
+    padding: 0 10px 70px;
+    justify-content: center !important;
+    gap: 20px;
   }
 }
 
